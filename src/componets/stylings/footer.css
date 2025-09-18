@@ -1,0 +1,9 @@
+footer {
+  width: 100%;
+  background-color: #f8f9fa; /* matches Bootstrap bg-light */
+}
+
+
+  .social-icons a {
+    font-size: 1.25rem;
+  }

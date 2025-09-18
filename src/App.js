@@ -9,15 +9,17 @@ import Notfound from './componets/Notfound';
 import "bootstrap/dist/css/bootstrap.min.css"
 import Addproduct from './componets/Addproduct';
 import Mpesapayment from './componets/Mpesapayment';
+import Navbar from './componets/Navbar';
+import "bootstrap/dist/js/bootstrap.min.js"
+import Footer from './componets/Footer';
+import About from './componets/About';
 
 function App() {
   return (
    <Router>
      <div className="App">
-      <header className="App-header">
-      <h1>SokoGarden Buy & Sell Online</h1>
-       
-      </header>
+     <Navbar/>
+  
       <Link to></Link>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -25,8 +27,12 @@ function App() {
         <Route path='/Signin' element={<Signin/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/mpesapayment' element={<Mpesapayment/>}/>
+        <Route path='/about' element={<About/>}/>
         <Route path='*' element={<Notfound/>}/>
+        
+
       </Routes>
+      <Footer/>
     </div>
    </Router>
   );
