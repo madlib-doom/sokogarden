@@ -1,0 +1,14 @@
+@keyframes bounce404 {
+  0%, 100% {
+    transform: translateY(0);
+    color: #dc3545;
+  }
+  50% {
+    transform: translateY(-20px);
+    color: #0d6efd;
+  }
+}
+
+.error-code {
+  animation: bounce404 1.5s infinite;
+}
